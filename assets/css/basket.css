@@ -1,0 +1,511 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body header {
+  position: fixed;
+  z-index: 4;
+  background-color: transparent;
+  width: 100%;
+  padding-bottom: 55px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body header nav {
+  position: fixed;
+  height: 65px;
+  top: 10px;
+  width: 80%;
+  display: flex;
+  margin: auto;
+  border-radius: 5px;
+}
+body header nav a img {
+  display: none;
+}
+body header nav .navbarSite ul li a {
+  color: black !important;
+  font-weight: 600;
+  transition: 0.4s;
+}
+body header nav .navbarSite ul li a:hover {
+  color: #147EFF !important;
+  font-weight: 600;
+  transition: 0.4s;
+}
+body header nav .navbarSite ul li .home {
+  color: #147EFF !important;
+}
+body header nav .navbarSite ul li .shop {
+  transition: 0.4s;
+}
+body header nav .navbarSite ul li .shop i {
+  color: black;
+  transition: 0.4s;
+}
+body header nav .navbarSite ul li .shop:hover {
+  transition: 0.4s;
+}
+body header nav .navbarSite ul li .shop:hover i {
+  color: blue;
+  transition: 0.4s;
+}
+body header nav .navbarSite ul li .wishlist {
+  transition: 0.4s;
+}
+body header nav .navbarSite ul li .wishlist i {
+  color: black;
+  transition: 0.4s;
+}
+body header nav .navbarSite ul li .wishlist:hover {
+  transition: 0.4s;
+}
+body header nav .navbarSite ul li .wishlist:hover i {
+  color: red;
+  transition: 0.4s;
+}
+body header nav .navbarSite button {
+  outline: none;
+  width: 110px;
+  height: 40px;
+  font-size: 14px;
+  border: none;
+  border-radius: 2px;
+  color: white;
+  font-weight: 700;
+  background-color: rgb(20, 126, 255);
+}
+body header nav .navbarSite button:hover {
+  width: 110px;
+  height: 40px;
+  font-size: 14px;
+  border: none;
+  border-radius: 2px;
+  color: white;
+  font-weight: 700;
+  transition: 0.4s;
+  cursor: pointer;
+  background-color: rgb(14, 14, 14);
+}
+body main #secOne {
+  padding: 110px 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body main #secOne .layers .settings {
+  position: fixed;
+  left: 0;
+  transition: 0.4s;
+  z-index: 5;
+  top: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  width: 50px;
+  height: 60px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+body main #secOne .layers .settings i {
+  transition: 0.4s;
+  color: rgb(20, 126, 255);
+  font-size: 25px;
+}
+body main #secOne .layers .settings:hover {
+  transition: 0.4s;
+  box-shadow: 0 0 5px 2px rgb(20, 55, 255);
+  position: fixed;
+  left: 0;
+  top: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  width: 50px;
+  height: 60px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+body main #secOne .layers .settings:hover i {
+  transition: 0.4s;
+  text-shadow: 0 2px 5px blue;
+  color: rgb(20, 55, 255);
+  font-size: 25px;
+}
+body main #secOne .layers .scroll {
+  position: fixed;
+  right: 10px;
+  transition: 0.4s;
+  z-index: 5;
+  bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(65, 65, 65);
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+}
+body main #secOne .layers .scroll a i {
+  transition: 0.4s;
+  color: white;
+  font-size: 25px;
+}
+body main #secOne .layers .scroll:hover {
+  box-shadow: 0 0 5px 2px gray;
+  position: fixed;
+  right: 10px;
+  transition: 0.4s;
+  z-index: 5;
+  bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(65, 65, 65);
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+}
+body main #secOne .layers .scroll:hover a i {
+  text-shadow: 0px 2px 5px silver;
+  transition: 0.4s;
+  color: white;
+  font-size: 25px;
+}
+body main #secOne .layers .shopBar {
+  background-color: darkgray;
+  transition: 0.4s;
+  width: 30px;
+  height: 90px;
+  position: fixed;
+  right: 5px;
+  top: 250px;
+  border-top-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 5px;
+}
+body main #secOne .layers .shopBar a .heart {
+  font-size: 18px;
+  color: black;
+  transition: 0.4s;
+}
+body main #secOne .layers .shopBar a .heart:hover {
+  font-size: 18px;
+  color: red;
+  transition: 0.4s;
+  text-shadow: 0 0 10px navy;
+}
+body main #secOne .layers .shopBar a .shop {
+  font-size: 18px;
+  color: black;
+  transition: 0.4s;
+}
+body main #secOne .layers .shopBar a .shop:hover {
+  font-size: 18px;
+  color: navy;
+  transition: 0.4s;
+  text-shadow: 0 0 10px red;
+}
+body main #secOne .layers .shopBar:hover {
+  box-shadow: 0 0 10px 2px black;
+  transition: 0.4s;
+  background-color: burlywood;
+  width: 30px;
+  height: 90px;
+  position: fixed;
+  right: 5px;
+  top: 250px;
+  border-top-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 5px;
+}
+body main #secOne .layers .shopBar:hover a .heart {
+  font-size: 18px;
+  color: black;
+  transition: 0.4s;
+}
+body main #secOne .layers .shopBar:hover a .heart:hover {
+  font-size: 18px;
+  color: red;
+  transition: 0.4s;
+  text-shadow: 0 0 10px navy;
+}
+body main #secOne .layers .shopBar:hover a .shop {
+  font-size: 18px;
+  color: black;
+  transition: 0.4s;
+}
+body main #secOne .layers .shopBar:hover a .shop:hover {
+  font-size: 18px;
+  color: navy;
+  transition: 0.4s;
+  text-shadow: 0 0 10px red;
+}
+body main #secOne .layers .shopSec {
+  position: fixed;
+  right: 8px;
+  bottom: 200px;
+}
+body main #secOne .layers .shopSec a i {
+  color: cadetblue;
+  font-size: 18px;
+  transition: 0.4s;
+}
+body main #secOne .layers .shopSec a i:hover {
+  color: darkcyan;
+  font-size: 22px;
+  transition: 0.4s;
+  cursor: pointer;
+}
+body main #secOne .secContent {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body main #secOne .secContent .contentOne {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body main #secOne .secContent .contentOne .content {
+  border: 1px solid rgb(31, 31, 31);
+  display: flex;
+  width: 250px;
+  transition: 0.4s;
+  gap: 3px;
+  height: 350px;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 20px 0;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+body main #secOne .secContent .contentOne .content img {
+  transition: 0.2s;
+  width: 200px;
+}
+body main #secOne .secContent .contentOne .content h2 {
+  transition: 0.4s;
+  font-size: 24px;
+}
+body main #secOne .secContent .contentOne .content h3 {
+  transition: 0.4s;
+  font-size: 16px;
+  color: gray;
+}
+body main #secOne .secContent .contentOne .content p {
+  transition: 0.4s;
+  font-size: 14px;
+  font-weight: 700;
+  color: orangered;
+}
+body main #secOne .secContent .contentOne .content .basket {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+body main #secOne .secContent .contentOne .content .basket button {
+  border: none;
+  border-radius: 5px;
+  width: 100px;
+  height: 30px;
+  background-color: #147EFF;
+  color: whitesmoke;
+  font-size: 12px;
+  transition: 0.4s;
+}
+body main #secOne .secContent .contentOne .content .basket button:hover {
+  border: none;
+  border-radius: 5px;
+  width: 100px;
+  height: 30px;
+  background-color: #147EFF;
+  color: whitesmoke;
+  font-size: 12px;
+  transition: 0.4s !important;
+  background-color: rgb(31, 31, 31);
+}
+body main #secOne .secContent .contentOne .content .basket i {
+  color: black;
+  font-size: 18px;
+  transition: 0.4s;
+}
+body main #secOne .secContent .contentOne .content .basket i:hover {
+  color: red;
+  font-size: 18px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+body main #secOne .secContent .contentOne .content:hover {
+  transition: 0.4s;
+  background-color: rgb(212, 222, 235);
+  border: 1px solid #147EFF;
+  box-shadow: 0 0 10px 2px #0360d3;
+  display: flex;
+  width: 250px;
+  height: 350px;
+  border-radius: 5px;
+  margin: 10px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+body main #secOne .secContent .contentOne .content:hover img {
+  transition: 0.2s;
+  width: 220px;
+  box-shadow: 0 0 5px 1px #0360d3;
+}
+body main #secOne .secContent .contentOne .content:hover h2 {
+  transition: 0.4s;
+  text-shadow: 1px 1px 1px #0360d3;
+  font-size: 24px;
+}
+body main #secOne .secContent .contentOne .content:hover h3 {
+  transition: 0.4s;
+  text-shadow: 1px 1px 1px #0360d3;
+  font-size: 16px;
+  color: gray;
+}
+body main #secOne .secContent .contentOne .content:hover p {
+  transition: 0.4s;
+  text-shadow: 1px 1px 1px #0360d3;
+  font-size: 14px;
+  font-weight: 700;
+  color: orangered;
+}
+body main #secOne .secContent .contentOne .content:hover .basket {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+body main #secOne .secContent .contentOne .content:hover .basket button {
+  box-shadow: 0 0 3px 2px #0360d3;
+  width: 100px;
+  height: 30px;
+  background-color: #147EFF;
+  color: whitesmoke;
+  font-size: 12px;
+  transition: 0.4s;
+}
+body main #secOne .secContent .contentOne .content:hover .basket button:hover {
+  width: 100px;
+  height: 30px;
+  background-color: #147EFF;
+  color: whitesmoke;
+  font-size: 12px;
+  transition: 0.4s !important;
+  background-color: rgb(31, 31, 31);
+}
+body main #secOne .secContent .contentOne .content:hover .basket i {
+  transition: 0.4s;
+  text-shadow: 1px 1px 1px #0360d3;
+  color: black;
+  font-size: 18px;
+  transition: 0.4s;
+}
+body main #secOne .secContent .contentOne .content:hover .basket i:hover {
+  color: red;
+  font-size: 18px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+body footer {
+  width: 100%;
+  background-color: rgb(31, 31, 31);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body footer #footerSec {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body footer #footerSec .secContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body footer #footerSec .secContent .contentOne {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 300px;
+}
+body footer #footerSec .secContent .contentOne .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+body footer #footerSec .secContent .contentOne .content .contactMail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+body footer #footerSec .secContent .contentOne .content .contactMail .textContent {
+  margin-top: 20px;
+}
+body footer #footerSec .secContent .contentOne .content .contactMail .textContent h2 {
+  font-size: 16px;
+  font-weight: 600;
+  color: gray;
+}
+body footer #footerSec .secContent .contentOne .content .contactMail .textContent p {
+  font-size: 14px;
+  color: silver;
+}
+body footer #footerSec .secContent .contentOne .content .contactMail i {
+  color: #147EFF;
+}
+body footer #footerSec .secContent .contentOne .content .contactPhone {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+body footer #footerSec .secContent .contentOne .content .contactPhone .textContent {
+  margin-top: 20px;
+}
+body footer #footerSec .secContent .contentOne .content .contactPhone .textContent h2 {
+  font-size: 16px;
+  font-weight: 600;
+  color: gray;
+}
+body footer #footerSec .secContent .contentOne .content .contactPhone .textContent p {
+  font-size: 14px;
+  color: silver;
+}
+body footer #footerSec .secContent .contentOne .content .contactPhone i {
+  color: #147EFF;
+}
+body footer #footerSec .secContent .line {
+  width: 1000px;
+  height: 1px;
+  background-color: rgb(65, 65, 65);
+}
+body footer #footerSec .secContent .contentTwo .content p {
+  color: silver;
+}

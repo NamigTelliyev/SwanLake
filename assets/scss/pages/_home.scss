@@ -1,0 +1,1251 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    header {
+        position: fixed;
+        z-index: 4;
+        background-color: transparent;
+        width: 100%;
+        padding-bottom: 55px;
+        height: 70px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        nav {
+            position: fixed;
+            height: 65px;
+            top: 10px;
+            width: 80%;
+            display: flex;
+            margin: auto;
+            border-radius: 5px;
+
+            a {
+                img {
+                    display: none;
+                }
+            }
+
+            .navbarSite {
+                ul {
+                    li {
+                        a {
+                            color: black !important;
+                            font-weight: 600;
+                            transition: 0.4s;
+
+                        }
+
+                        a:hover {
+                            color: #147EFF !important;
+                            font-weight: 600;
+                            transition: 0.4s;
+                        }
+
+                        .home {
+                            color: #147EFF !important;
+                        }
+
+                        .shop {
+                            transition: 0.4s;
+
+                            i {
+                                color: black;
+                                transition: 0.4s;
+                            }
+                        }
+
+                        .shop:hover {
+                            transition: 0.4s;
+
+                            i {
+                                color: blue;
+                                transition: 0.4s;
+
+                            }
+                        }
+
+                        .wishlist {
+                            transition: 0.4s;
+
+                            i {
+                                color: black;
+                                transition: 0.4s;
+                            }
+                        }
+
+                        .wishlist:hover {
+                            transition: 0.4s;
+
+                            i {
+                                color: red;
+                                transition: 0.4s;
+                            }
+                        }
+                    }
+                }
+
+                button {
+                    outline: none;
+                    width: 110px;
+                    height: 40px;
+                    font-size: 14px;
+                    border: none;
+                    border-radius: 2px;
+                    color: white;
+                    font-weight: 700;
+                    background-color: rgb(20, 126, 255);
+                }
+
+                button:hover {
+                    width: 110px;
+                    height: 40px;
+                    font-size: 14px;
+                    border: none;
+                    border-radius: 2px;
+                    color: white;
+                    font-weight: 700;
+                    transition: 0.4s;
+                    cursor: pointer;
+                    background-color: rgb(14, 14, 14);
+                }
+            }
+        }
+    }
+
+    main {
+        #secOne {
+            background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(/assets/img/img05.jpg);
+            width: 100%;
+            background-size: cover;
+            background-position: -250px;
+            padding: 150px 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .layers {
+                .settings {
+                    position: fixed;
+                    left: 0;
+                    transition: 0.4s;
+                    z-index: 5;
+                    top: 300px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: white;
+                    width: 50px;
+                    height: 60px;
+                    border-top-right-radius: 10px;
+                    border-bottom-right-radius: 10px;
+
+                    i {
+                        transition: 0.4s;
+
+                        color: rgb(20, 126, 255);
+                        font-size: 25px;
+                    }
+                }
+
+                .settings:hover {
+                    transition: 0.4s;
+                    box-shadow: 0 0 5px 2px rgb(20, 55, 255);
+                    position: fixed;
+                    left: 0;
+                    top: 300px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: white;
+                    width: 50px;
+                    height: 60px;
+                    border-top-right-radius: 10px;
+                    border-bottom-right-radius: 10px;
+
+                    i {
+                        transition: 0.4s;
+                        text-shadow: 0 2px 5px blue;
+                        color: rgb(20, 55, 255);
+                        font-size: 25px;
+                    }
+                }
+
+                .scroll {
+                    position: fixed;
+                    right: 10px;
+                    transition: 0.4s;
+                    z-index: 5;
+                    bottom: 20px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: rgb(65, 65, 65);
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 5px;
+
+                    a {
+                        i {
+                            transition: 0.4s;
+
+                            color: white;
+                            font-size: 25px;
+                        }
+                    }
+                }
+
+                .scroll:hover {
+                    box-shadow: 0 0 5px 2px gray;
+                    position: fixed;
+                    right: 10px;
+                    transition: 0.4s;
+                    z-index: 5;
+                    bottom: 20px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: rgb(65, 65, 65);
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 5px;
+
+                    a {
+                        i {
+                            text-shadow: 0px 2px 5px silver;
+                            transition: 0.4s;
+
+                            color: white;
+                            font-size: 25px;
+                        }
+                    }
+                }
+
+                .shopBar {
+                    background-color: darkgray;
+                    transition: 0.4s;
+                    width: 30px;
+                    height: 90px;
+                    position: fixed;
+                    right: 5px;
+                    top: 250px;
+                    border-top-left-radius: 30px;
+                    border-bottom-right-radius: 30px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    gap: 5px;
+
+                    a {
+                        .heart {
+                            font-size: 18px;
+                            color: black;
+                            transition: 0.4s;
+                        }
+
+                        .heart:hover {
+                            font-size: 18px;
+                            color: red;
+                            transition: 0.4s;
+                            text-shadow: 0 0 10px navy;
+                        }
+
+                        .shop {
+                            font-size: 18px;
+                            color: black;
+                            transition: 0.4s;
+                        }
+
+                        .shop:hover {
+                            font-size: 18px;
+                            color: navy;
+                            transition: 0.4s;
+                            text-shadow: 0 0 10px red;
+                        }
+                    }
+                }
+
+                .shopBar:hover {
+                    box-shadow: 0 0 10px 2px black;
+                    transition: 0.4s;
+                    background-color: burlywood;
+                    width: 30px;
+                    height: 90px;
+                    position: fixed;
+                    right: 5px;
+                    top: 250px;
+                    border-top-left-radius: 30px;
+                    border-bottom-right-radius: 30px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    gap: 5px;
+
+                    a {
+                        .heart {
+                            font-size: 18px;
+                            color: black;
+                            transition: 0.4s;
+                        }
+
+                        .heart:hover {
+                            font-size: 18px;
+                            color: red;
+                            transition: 0.4s;
+                            text-shadow: 0 0 10px navy;
+                        }
+
+                        .shop {
+                            font-size: 18px;
+                            color: black;
+                            transition: 0.4s;
+                        }
+
+                        .shop:hover {
+                            font-size: 18px;
+                            color: navy;
+                            transition: 0.4s;
+                            text-shadow: 0 0 10px red;
+                        }
+                    }
+                }
+
+                .shopSec {
+
+                    position: fixed;
+                    right: 8px;
+                    bottom: 200px;
+
+                    a {
+                        i {
+                            color: cadetblue;
+                            font-size: 18px;
+                            transition: 0.4s;
+
+                        }
+
+                        i:hover {
+                            color: darkcyan;
+                            font-size: 22px;
+                            transition: 0.4s;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+
+            .secContent {
+                width: 80%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .contentOne {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    .firstContent {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: start;
+
+                        p {
+
+                            font-size: 16px;
+                            color: white;
+
+                        }
+
+                        h1 {
+                            font-size: 45px;
+                            color: white;
+
+                            span {
+                                color: rgb(20, 126, 255);
+                            }
+                        }
+
+                        img {
+                            width: 70px;
+                            padding: 30px 0;
+                        }
+
+                        button {
+                            outline: none;
+                            width: 180px;
+                            transition: 0.4s;
+                            height: 65px;
+                            border: none;
+                            border-radius: 2px;
+                            color: white;
+                            font-weight: 700;
+                            background-color: rgb(20, 126, 255);
+                        }
+
+                        button:hover {
+                            transition: 0.4s;
+                            cursor: pointer;
+                            background-color: rgb(14, 14, 14);
+                            width: 180px;
+                            height: 65px;
+                            border: none;
+                            border-radius: 2px;
+                            color: white;
+                            font-weight: 700;
+                        }
+                    }
+
+                    .secondContent {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        form {
+                            background-color: white;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+                            border-radius: 5px;
+                            width: 500px;
+
+                            h2 {
+                                padding-top: 80px;
+                                font-size: 30px;
+                                font-weight: 700;
+
+                            }
+
+                            p {
+                                font-size: 16px;
+                                color: gray;
+                                padding-bottom: 50px;
+
+                            }
+
+                            input {
+                                width: 400px;
+                                height: 45px;
+                                padding-left: 10px;
+                                margin-bottom: 20px;
+                                border-radius: 5px;
+                                border: 1px solid gray;
+                            }
+
+                            .registerButton {
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                gap: 80px;
+                                padding-bottom: 80px;
+
+                                h3 {
+                                    display: flex;
+                                    gap: 5px;
+                                    font-size: 10px;
+                                    color: gray;
+
+                                    i {
+                                        color: white;
+                                        background-color: rgb(20, 126, 255);
+                                        width: 12px;
+                                        height: 12px;
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        border-radius: 50%;
+                                    }
+
+                                }
+
+                                button {
+                                    outline: none;
+                                    width: 150px;
+                                    height: 55px;
+                                    border: none;
+                                    border-radius: 2px;
+                                    color: white;
+                                    font-weight: 700;
+                                    background-color: rgb(20, 126, 255);
+                                }
+
+                                button:hover {
+                                    width: 150px;
+                                    height: 55px;
+                                    border: none;
+                                    border-radius: 2px;
+                                    color: white;
+                                    font-weight: 700;
+                                    transition: 0.4s;
+                                    cursor: pointer;
+                                    background-color: rgb(14, 14, 14);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        #secTwo {
+            padding: 110px 0;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .secContent {
+                width: 80%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                .contentOne {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding-bottom: 50px;
+
+                    .content {
+                        display: flex;
+                        gap: 10px;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        text-align: center;
+
+                        h2 {
+                            font-size: 30px;
+                            color: #147EFF;
+                            font-weight: 700;
+
+                            span {
+                                color: black;
+                            }
+                        }
+
+                        p {
+                            color: gray;
+                            width: 800px;
+                        }
+                    }
+                }
+
+                .contentTwo {
+                    .content {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: start;
+
+                        h3 {
+                            color: #147EFF;
+                            font-size: 30px;
+                            font-weight: 700;
+                            padding: 10px 0;
+                        }
+
+                        h2 {
+                            font-size: 20px;
+                        }
+
+                        img {
+                            width: 60px;
+                            padding: 10px 0;
+                        }
+
+                        p {
+                            color: gray;
+                            font-size: 14px;
+                        }
+
+                        button {
+                            outline: none;
+                            padding-top: 10px;
+                            border: none;
+                            background-color: transparent;
+                            color: #147EFF;
+                            font-weight: 700;
+                            font-size: 12px;
+                        }
+
+                        button:hover {
+                            padding-top: 10px;
+                            border: none;
+                            background-color: transparent;
+                            color: #0360d3;
+                            font-weight: 700;
+                            font-size: 12px;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+
+        #secThree {
+            background: url(/assets/img/img04.jpg);
+            padding: 150px 0;
+            width: 100%;
+            background-size: cover;
+            background-position: 0 -50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .secContent {
+                width: 80%;
+
+                .contentOne {
+                    .content {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        line-height: 5px;
+
+                        h2 {
+                            color: #147EFF;
+                            font-size: 70px;
+                            font-weight: 700;
+                        }
+
+                        p {
+                            color: gray;
+                            font-size: 16px;
+                        }
+
+                    }
+                }
+            }
+        }
+
+
+        #secFive {
+            padding: 110px 0;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .secContent {
+                width: 80%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                .contentOne {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding-bottom: 50px;
+
+                    .content {
+                        display: flex;
+                        gap: 10px;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        text-align: center;
+
+                        h2 {
+                            font-size: 30px;
+                            color: #147EFF;
+                            font-weight: 700;
+
+                            span {
+                                color: black;
+                            }
+                        }
+
+                        p {
+                            color: gray;
+                            width: 800px;
+                        }
+
+                    }
+                }
+
+                .search {
+                    display: flex;
+                    padding: 30px 0;
+                    justify-content: center;
+                    align-items: center;
+
+                    form {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        input {
+                            padding-left: 5px;
+                            width: 350px;
+                            height: 35px;
+                            outline: none;
+                            border: 1px solid gray;
+                        }
+
+                        button {
+                            height: 35px;
+                            width: 90px;
+                            border: none;
+                            background-color: #0360d3;
+                            color: azure;
+                            font-weight: 600;
+                            font-weight: 16px;
+                            transition: 0.4s;
+                            outline: none;
+                        }
+
+                        button:hover {
+                            height: 35px;
+                            width: 90px;
+                            border: none;
+                            background-color: rgb(12, 12, 12);
+                            color: azure;
+                            font-weight: 600;
+                            font-weight: 16px;
+                            cursor: pointer;
+                        }
+                    }
+                }
+
+                .contentTwo {
+                    display: flex;
+                    // flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+
+
+                    .content {
+                        border: 1px solid rgb(31, 31, 31);
+                        display: flex;
+                        width: 250px;
+                        transition: 0.4s;
+                        gap: 3px;
+                        height: 350px;
+                        border-radius: 5px;
+                        margin: 10px;
+                        padding: 20px 0;
+                        justify-content: center;
+                        align-items: center;
+                        flex-direction: column;
+
+                        img {
+                            transition: 0.2s;
+
+                            width: 200px;
+                        }
+
+                        h2 {
+                            transition: 0.4s;
+
+                            font-size: 24px;
+                        }
+
+                        h3 {
+                            transition: 0.4s;
+
+                            font-size: 16px;
+                            color: gray;
+                        }
+
+                        p {
+                            transition: 0.4s;
+
+                            font-size: 14px;
+                            font-weight: 700;
+                            color: orangered;
+                        }
+
+                        .basket {
+                            display: flex;
+                            gap: 20px;
+                            justify-content: center;
+                            align-items: center;
+
+                            button {
+                                width: 100px;
+                                height: 30px;
+                                background-color: #147EFF;
+                                color: whitesmoke;
+                                font-size: 12px;
+                                transition: 0.4s;
+                            }
+
+                            button:hover {
+                                width: 100px;
+                                height: 30px;
+                                background-color: #147EFF;
+                                color: whitesmoke;
+                                font-size: 12px;
+                                transition: 0.4s !important;
+                                background-color: rgb(31, 31, 31);
+                            }
+
+                            i {
+                                color: black;
+                                font-size: 18px;
+                                transition: 0.4s;
+
+                            }
+
+                            i:hover {
+                                color: red;
+                                font-size: 18px;
+                                cursor: pointer;
+                                transition: 0.4s;
+                            }
+                        }
+                    }
+
+                    .content:hover {
+                        transition: 0.4s;
+                        background-color: rgb(212, 222, 235);
+                        border: 1px solid #147EFF;
+                        box-shadow: 0 0 10px 2px #0360d3;
+                        display: flex;
+                        width: 250px;
+                        height: 350px;
+                        border-radius: 5px;
+                        margin: 10px;
+                        justify-content: center;
+                        align-items: center;
+                        flex-direction: column;
+
+                        img {
+                            transition: 0.2s;
+                            width: 220px;
+                            box-shadow: 0 0 5px 1px #0360d3;
+                        }
+
+                        h2 {
+                            transition: 0.4s;
+                            text-shadow: 1px 1px 1px #0360d3;
+                            font-size: 24px;
+                        }
+
+                        h3 {
+                            transition: 0.4s;
+                            text-shadow: 1px 1px 1px #0360d3;
+                            font-size: 16px;
+                            color: gray;
+                        }
+
+                        p {
+                            transition: 0.4s;
+                            text-shadow: 1px 1px 1px #0360d3;
+                            font-size: 14px;
+                            font-weight: 700;
+                            color: orangered;
+                        }
+
+                        .basket {
+                            display: flex;
+                            gap: 20px;
+                            justify-content: center;
+                            align-items: center;
+
+                            button {
+
+                                box-shadow: 0 0 3px 2px #0360d3;
+                                width: 100px;
+                                height: 30px;
+                                background-color: #147EFF;
+                                color: whitesmoke;
+                                font-size: 12px;
+                                transition: 0.4s;
+                            }
+
+                            button:hover {
+                                width: 100px;
+                                height: 30px;
+                                background-color: #147EFF;
+                                color: whitesmoke;
+                                font-size: 12px;
+                                transition: 0.4s !important;
+                                background-color: rgb(31, 31, 31);
+                            }
+
+                            i {
+                                transition: 0.4s;
+                                text-shadow: 1px 1px 1px #0360d3;
+                                color: black;
+                                font-size: 18px;
+                                transition: 0.4s;
+
+                            }
+
+                            i:hover {
+                                color: red;
+                                font-size: 18px;
+                                cursor: pointer;
+                                transition: 0.4s;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        #secSix {
+            background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(/assets/img/img01.jpg);
+            height: 600px;
+            width: 100%;
+            background-size: cover;
+            // background-repeat: no-repeat;
+            background-position: 0 -150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .secContent {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .contentOne {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    .content {
+                        // padding-top: 100px;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 10px;
+                        justify-content: center;
+                        align-items: center;
+                        text-align: center;
+
+                        h3 {
+                            color: white;
+                            font-size: 16px;
+                            font-weight: 400;
+                        }
+
+                        h2 {
+                            color: #147EFF;
+                            font-size: 50px;
+                            font-weight: 600;
+                        }
+
+                        img {
+                            width: 70px;
+                        }
+
+                        p {
+                            color: white;
+                            font-size: 16px;
+                            width: 800px;
+                        }
+
+                        button {
+                            outline: none;
+                            width: 165px;
+                            height: 55px;
+                            border: none;
+                            border-radius: 2px;
+                            color: white;
+                            font-weight: 700;
+                            background-color: rgb(20, 126, 255);
+                        }
+
+                        button:hover {
+                            width: 165px;
+                            height: 55px;
+                            border: none;
+                            border-radius: 2px;
+                            color: white;
+                            font-weight: 700;
+                            transition: 0.4s;
+                            cursor: pointer;
+                            background-color: rgb(14, 14, 14);
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+
+    footer {
+        width: 100%;
+        background-color: rgb(31, 31, 31);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        #footerSec {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .secContent {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                .contentOne {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 300px;
+
+                    .content {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        gap: 50px;
+
+                        .contactMail {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            gap: 10px;
+
+                            .textContent {
+                                margin-top: 20px;
+
+                                h2 {
+                                    font-size: 16px;
+                                    font-weight: 600;
+                                    color: gray;
+                                }
+
+                                p {
+                                    font-size: 14px;
+                                    color: silver;
+
+                                }
+                            }
+
+                            i {
+                                color: #147EFF;
+                            }
+                        }
+
+                        .contactPhone {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            gap: 10px;
+
+                            .textContent {
+                                margin-top: 20px;
+
+                                h2 {
+                                    font-size: 16px;
+                                    font-weight: 600;
+                                    color: gray;
+                                }
+
+                                p {
+                                    font-size: 14px;
+                                    color: silver;
+
+                                }
+                            }
+
+                            i {
+                                color: #147EFF;
+                            }
+                        }
+                    }
+                }
+
+                .line {
+                    width: 600px;
+                    height: 1px;
+                    background-color: rgb(65, 65, 65);
+                }
+
+                .contentTwo {
+                    .content {
+                        p {
+                            color: silver;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 600px) and (min-width: 300px) {
+body{
+    header{
+        // background-color: white;
+        nav{
+            a{
+                img{display: block;
+                width: 150px;
+                }
+            }
+            .navbarSite{
+                background-color: white;
+                padding: 0 20px;
+                button{
+                    width: 100%;
+                }
+                button:hover{
+                    width: 100%;
+                }
+            }
+        }
+    }
+    main{
+        #secOne{
+            .layers{
+                display: none;
+            }
+            .secContent{
+                .contentOne{
+                    .firstContent{
+                        padding-bottom: 50px;
+                        p{
+                            font-size: 14px;
+                            
+                        }
+                        h1{
+                            font-size: 35px;
+                        }
+                        img{
+                            width: 50px;
+                            padding: 20px 0;
+                        }
+
+                        button{
+                            width: 130px;
+                            height: 50px;
+                            font-size: 14px;
+                        }
+                        button:hover{
+                            width: 130px;
+                            height: 50px;
+                            font-size: 14px;
+                        }
+                    }
+                    .secondContent{
+                        form{
+                            width: 480px;
+                            h2{
+                                padding-top: 40px;
+                            }
+                            p{
+                                padding-bottom: 20px;
+                            }
+                            .registerButton{
+                                padding-bottom: 30px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        #secTwo{
+            .secContent{
+                .contentOne{
+                    .content{
+h2{
+    font-size: 25px;
+}
+p{
+    width: 450px;
+}
+                    }
+                }
+                .contentTwo{
+                    
+                    .content{
+                        padding-bottom: 80px;
+                        h3{
+                            font-size: 25px;
+                        }
+                        
+                    }
+                }
+            }
+        }
+
+        #secThree{
+            .secContent{
+                .contentOne{
+                    
+                    .content{
+
+                    }
+                }
+            }
+        }
+
+        #secFive{
+            .secContent{
+                .contentOne{
+                    .content{
+                        h2{
+                            font-size: 25px;
+                        }
+                        p{
+                            width: 450px;
+                        }
+                    }
+                }
+            }
+        }
+        #secSix{
+            .secContent{
+                .contentOne{
+                    .content{
+                        h3{
+                            font-size: 14px;
+                        }
+                     h2{
+                        font-size: 30px;
+                     }
+                     p{
+                        font-size: 14px;
+                        width: 450px;
+                     }
+                     button{
+                        width: 130px;
+                        height: 40px;
+                     }
+                    }
+                }
+            }
+        }
+
+        
+    }
+    footer{
+
+        #footerSec{
+            .secContent{
+                .contentOne{
+                    .content{
+                    
+                    }
+                }
+                .line{
+                  
+                    width: 300px;
+                }
+            }
+        }
+    }
+}    
+}
